@@ -1,11 +1,17 @@
 fun main() {
-    val nama: String = "budi"
-    var jumlahLogin: Int = 1
+    val nilai = 75
 
-    println("nama: $nama")
-    println("jumlah login awal: $jumlahLogin")
+    val result = when (nilai) {
+            in 90..100 -> 'A'
+            in 80..89 -> 'B'
+            in 70..79 -> 'C'
+            in 60..69 -> 'D'
+            else -> 'E'
+        }
 
-    jumlahLogin = 2
+    println("""
+        nilai angka : $nilai
+        grade huruf : $result
+    """.trimIndent())
 
-    println("jumlah login update: $jumlahLogin")
 }
