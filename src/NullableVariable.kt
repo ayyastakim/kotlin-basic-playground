@@ -2,6 +2,7 @@ fun main() {
     /*
     * kotlin secara default mewajibkan untuk meng-initialize nilai dari sebuah variable (non-null type)
     * jika nilainya memiliki dua situasi (ada/tida ada), gunakan nullable type: {DataType}?
+    * gunakan elvis operator (?) untuk null handling
     * */
 
      // var name: String = null  // error: null tidak dapat di-aasign sebagai non-null type (String)
